@@ -15,13 +15,13 @@ class KeypadController(
     private val keypadService: KeypadService,
 ) {
     @GetMapping
-//    fun getKeypads(): KeypadResponseDto {
-//
-//        return KeypadResponseDto.from(keypadService.createKeypad())
-//    }
+    fun getKeypads(): KeypadResponseDto {
 
-    fun getKeypads(): KeypadResponseDtoforDebug {
-
-        return KeypadResponseDtoforDebug.from(keypadService.createKeypad())
+        return KeypadResponseDto.from(keypadService.createKeypad())
     }
+
+//    fun getKeypads(): KeypadResponseDtoforDebug {
+//
+//        return KeypadResponseDtoforDebug.from(keypadService.createKeypad())
+//    }
 }

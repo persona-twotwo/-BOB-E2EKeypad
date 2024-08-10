@@ -53,7 +53,7 @@ class KeypadService(
 
         for (i in images.indices) {
             val left = (i%4) * imageWidth
-            val top = (i/3) * imageHeight
+            val top = (i/4) * imageHeight
             g2d.drawImage(images[i],left,top,null)
         }
         g2d.dispose()
