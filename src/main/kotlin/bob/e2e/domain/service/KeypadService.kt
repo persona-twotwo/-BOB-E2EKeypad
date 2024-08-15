@@ -1,22 +1,17 @@
 package bob.e2e.domain.service
 
-import bob.e2e.data.repository.KeypadRedisRepository
-import bob.e2e.data.repository.KeypadRepository
 import bob.e2e.domain.model.Keypad
-import bob.e2e.presentation.dto.KeypadRequestDto
-import bob.e2e.presentation.dto.KeypadResponseDto
 import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Service
 import java.awt.Graphics2D
 import java.awt.image.BufferedImage
 import java.io.ByteArrayOutputStream
-
 import java.util.*
 import javax.imageio.ImageIO
 
 @Service
 class KeypadService(
-    private val keypadRedisRepository: KeypadRedisRepository
+//    private val redisTemplate: RedisTemplate<String, Any>
 ) {
     private var id = 0
     private val numbers = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, -1, -1)

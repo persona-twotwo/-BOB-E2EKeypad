@@ -1,16 +1,24 @@
 package bob.e2e.data.repository
 
-import bob.e2e.domain.model.Keypad
 import org.springframework.stereotype.Repository
 
 @Repository
-class KeypadRedisRepository : KeypadRepository {
-    override fun insert(keypad: Keypad) {
-        TODO("Not yet implemented")
-    }
+class KeypadRedisRepository(
+//    private val redisTemplate: RedisTemplate<String, List<Int>>
+) {
 
-    override fun selectBy(id: String): Keypad {
-        TODO()
-    }
+
+//    fun insert(keypad: Keypad) {
+//        val key = keypad.id
+//        val data = keypad.orderKey
+//        redisTemplate.opsForValue().set(key, data)
+//
+//    }
+
+//    fun selectBy(id: String): List<Int> {
+//
+//        val data = redisTemplate.opsForValue().get(id)
+//        return data
+//    }
 
 }
