@@ -19,6 +19,11 @@ data class KeypadResponseDtoforDebug(
                     numberHashArray.add(keypad.numberHashArray[keypad.orderKey[i]])
                 }
             }
+            var debugString = "ID : ${keypad.id}\n"
+            for (i in 0 until 12) {
+                debugString += "\t- "+keypad.orderKey[i].toString()+" "+numberHashArray[i]+"\n"
+            }
+            println(debugString)
             return KeypadResponseDtoforDebug(
                 id = keypad.id,
                 numberHashArray = numberHashArray,

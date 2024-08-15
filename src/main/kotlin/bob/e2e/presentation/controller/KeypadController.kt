@@ -1,6 +1,7 @@
 package bob.e2e.presentation.controller
 
 import bob.e2e.domain.service.KeypadService
+//import bob.e2e.presentation.dto.KeypadResponseDtoforDebug
 import bob.e2e.presentation.dto.KeypadResponseDto
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -22,8 +23,12 @@ class KeypadController(
         )
     }
 
-//    fun getKeypads(): KeypadResponseDtoforDebug {
+//    fun getKeypads(): ResponseEntity<KeypadResponseDtoforDebug> {
 //
-//        return KeypadResponseDtoforDebug.from(keypadService.createKeypad())
+//        return ResponseEntity.status(HttpStatus.OK).body(
+//            KeypadResponseDtoforDebug.from(keypadService.createKeypad())
+//        )
 //    }
+
+
 }
