@@ -35,6 +35,8 @@ dependencies {
 
     implementation("io.ktor:ktor-server-cors:2.0.0")
 
+
+
 }
 
 tasks.test {
